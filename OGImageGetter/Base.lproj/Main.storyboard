@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OGImageGetter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GM0-ym-8Qm"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ay7-04-EsQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="MrS-6L-9a2"/>
+                                    <constraint firstAttribute="height" constant="30" id="roi-gm-TwL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5z-8j-6gc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="ApW-fi-PVv"/>
+                                    <constraint firstAttribute="height" constant="30" id="U4C-LI-HwK"/>
+                                </constraints>
+                                <state key="normal" title="取得"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GM0-ym-8Qm" secondAttribute="trailing" id="1pG-Ie-H4i"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GM0-ym-8Qm" secondAttribute="bottom" id="A8L-4X-epO"/>
+                            <constraint firstItem="GM0-ym-8Qm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UZl-0o-yCB"/>
+                            <constraint firstItem="ay7-04-EsQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="e4p-2z-ZBd"/>
+                            <constraint firstItem="J5z-8j-6gc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="gAi-9J-hSe"/>
+                            <constraint firstItem="ay7-04-EsQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="idu-eN-F9r"/>
+                            <constraint firstItem="GM0-ym-8Qm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="otY-CR-6X8"/>
+                            <constraint firstItem="J5z-8j-6gc" firstAttribute="leading" secondItem="ay7-04-EsQ" secondAttribute="trailing" constant="5" id="yAZ-Yj-NVh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="J5z-8j-6gc" id="Kxl-ql-Awd"/>
+                        <outlet property="ogImageView" destination="GM0-ym-8Qm" id="OYZ-Tp-bmx"/>
+                        <outlet property="text" destination="ay7-04-EsQ" id="wxA-jS-Yye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

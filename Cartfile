@@ -1,0 +1,8 @@
+# Almofire
+github "Alamofire/Alamofire" ~> 4.0
+# RxSwift
+github "ReactiveX/RxSwift" ~> 3.0.0
+# Kanna
+github "tid-kijyun/Kanna" ~> 2.0.0
+# SDWebImage
+github "rs/SDWebImage" ~> 4.0

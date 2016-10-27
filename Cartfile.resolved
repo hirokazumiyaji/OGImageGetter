@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "4.0.1"
+github "tid-kijyun/Kanna" "2.0.1"
+github "ReactiveX/RxSwift" "3.0.0"
+github "rs/SDWebImage" "4.0.0-beta2"
