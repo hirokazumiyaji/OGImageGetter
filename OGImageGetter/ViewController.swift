@@ -30,9 +30,11 @@ class ViewController: UIViewController {
                         guard let strongSelf = self else { return }
                         switch $0 {
                         case .next(let element):
-                            if !(element?.isEmpty)! {
-                                let ogImageURL = URL(string: element!)
-                                strongSelf.ogImageView.sd_setImage(with: ogImageURL)
+                            if let urlString = element {
+                                if !urlString.isEmpty {
+                                    let ogImageURL = URL(string: element!)
+                                    strongSelf.ogImageView.sd_setImage(with: ogImageURL)
+                                }
                             }
                         case .error(let error):
                             print(error)
